@@ -1,0 +1,103 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+	string input= (Console.ReadLine());
+	bool isSbyte = true;
+	bool isByte = true;
+	bool isShort = true;
+	bool isUshort = true;
+	bool isInt = true;
+	bool isUint = true;
+	bool isLong = true;
+		
+		
+		try
+		{
+			sbyte currentTyper = sbyte.Parse(input);
+		}
+		catch (Exception)
+		{
+			isSbyte = false;
+		}
+		
+		try
+		{
+			byte currentTyper = byte.Parse(input);
+		}
+		catch (Exception)
+		{
+			isByte = false;
+		}
+		
+		try
+		{
+			short currentTyper = short.Parse(input);
+		}
+		catch (Exception)
+		{
+			isShort = false;
+		}
+		
+		
+		try
+		{
+			ushort currentTyper = ushort.Parse(input);
+		}
+		catch (Exception)
+		{
+			isUshort = false;
+		}
+		
+		try
+		{
+			int currentTyper = int.Parse(input);
+		}
+		catch (Exception)
+		{
+			isInt = false;
+		}
+		
+		try
+		{
+			uint currentTyper = uint.Parse(input);
+		}
+		catch (Exception)
+		{
+			isUint = false;
+		}
+		
+		try
+		{
+			long currentTyper = long.Parse(input);
+		}
+		catch (Exception)
+		{
+			isLong = false;
+		}
+
+			
+		if(isLong)
+		{
+			Console.WriteLine("{0} can fit in:", input);
+			Console.Write(isSbyte ? "* sbyte\n" : "");
+			Console.Write(isByte ? "* byte\n" : "");
+			Console.Write(isShort ? "* short\n" : "");
+			Console.Write(isUshort ? "* ushort\n" : "");
+			Console.Write(isInt ? "* int\n" : "");
+			Console.Write(isUint ? "* uint\n" : "");
+			Console.Write(isLong ? "* long\n" : "");
+		}
+		else
+		{
+		Console.WriteLine("{0} can't fit in any type", input);
+		}	
+	
+	
+	
+	
+	}
+}
