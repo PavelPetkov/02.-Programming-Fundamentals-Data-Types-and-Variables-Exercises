@@ -1,0 +1,17 @@
+using System;
+					
+public class Transport 
+{
+	
+	public static void Main()
+	{
+		
+		
+		double numberofPassangers = double.Parse(Console.ReadLine());
+		double numberofCourses =0;
+		numberofCourses = (double)((Math.Ceiling(numberofPassangers/24)));	
+		
+		Console.WriteLine(numberofCourses);
+		
+	}
+}
