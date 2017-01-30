@@ -1,0 +1,23 @@
+using System;
+					
+public class ExactProductofRealNumbers 
+{
+	
+	public static void Main()
+	{
+		
+		
+		byte numberofNs = byte.Parse(Console.ReadLine());
+		decimal sumofNs =1;
+		for(int i =0; i<numberofNs; i++)
+		{
+			 
+			decimal n = decimal.Parse(Console.ReadLine());
+			sumofNs *=n;
+			
+		}
+		
+		Console.WriteLine(sumofNs);
+		
+	}
+}
